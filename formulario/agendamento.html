@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Agendamento</title>
+        <link href="../css/site.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="topo">
+            <h1>Agendamento</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Página inicial</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="conteudo">
+            <form action="http://www.thiagomiranda.net/formulario.php" method="post" id="form">
+                <label id="nome">Nome Completo:
+                    <input type="text" name="nomecompleto" placeholder="Digite seu nome completo">
+                </label>
+                <label id="tel">Número de Telefone
+                    <input type="tel" name="telefone" placeholder="Digite seu número">
+                </label>
+                <label id="email">Email:
+                    <input type="email" name="email" placeholder="Informe seu email">
+                </label>
+                <label id="data">Data de realização da palestra:
+                    <input type="date" name="data">
+                </label>
+                <label id="hora">Horário de realização da palestra:
+                    <input type="time" name="tempo">
+                </label>
+                <fieldset id="objetivo">
+                    <legend>Quais são os objetivos principais da palestra desejada?</legend>
+                    <label>
+                        <input type="checkbox" name="objetivo" value="existencial">
+                        Existencial
+                    </label>
+                    <label>
+                        <input type="checkbox" name="objetivo" value="humanidade">
+                        Humanidade
+                    </label>
+                    <label>
+                        <input type="checkbox" name="objetivo" value="renovacao">
+                        Renovação
+                    </label>
+                    <label>
+                        <input type="checkbox" name="objetivo" value="arte">
+                        Arte
+                    </label>
+                    <label>
+                        <input type="checkbox" name="objetivo" value="futuro">
+                        Futuro
+                    </label>
+                    <label>
+                        <input type="checkbox" name="objetivo" value="diversidade">
+                        Diversidade
+                    </label>
+                    <label>
+                        <input type="checkbox" name="objetivo" value="motivacional">
+                        Motivacional
+                    </label>
+                </fieldset>
+                <label id="opcao">Palestrante escolhido
+                    <select name="palestrante">
+                        <option></option>
+                        <option value="mario">Mario Sergio Cortella</option>
+                        <option value="miguel">Miguel Falabella</option>
+                        <option value="Leila">Leila Ferreira</option>
+                        <option value="leandro">Leandro Karnal</option>
+                        <option value="lisiane">Lisiane Lemos</option>
+                        <option value="denise">Denise Fraga</option>
+                    </select>
+                </label>
+                <button type="submit" id="botao">Enviar</button>
+            </form>
+        </main>
+        <footer>
+        <div>
+            <h3>Medeiros Palestrantes</h3>
+            </div>
+            <div class="emoji">
+            <img src="imagens/telefone.png" height="20px">
+            <p>+55 77 3441 7522</p>
+            </div>
+            <div class="emoji">
+            <img src="imagens/email.png" height="25px">
+            <p>palestrantes@medeirospalestrantes.com.br</p>
+            </div>
+            <div class="cor">
+            <p>2022 © Medeiros Palestrantes. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>
